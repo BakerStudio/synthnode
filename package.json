@@ -1,0 +1,23 @@
+{
+  "name": "synthnode",
+  "version": "0.0.2",
+  "description": "A simple library for audio synthesis",
+  "main": "synth.js",
+  "dependencies": {
+    "audio-generator": "^2.1.2",
+    "audio-speaker": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "coffee main.coffee"
+  },
+  "author": "ivanross",
+  "license": "MIT",
+  "coffeelintConfig": {
+    "max_line_length": {
+      "level": "error",
+      "value": "200"
+    }
+  },
+  "false": {}
+}
