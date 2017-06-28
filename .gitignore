@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+Icon*
+
+private/
+
+# File created by the library
+*.raw
+*.wav
