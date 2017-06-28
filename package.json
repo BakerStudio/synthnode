@@ -1,6 +1,6 @@
 {
   "name": "synthnode",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple library for audio synthesis",
   "main": "synth.js",
   "dependencies": {
@@ -11,6 +11,11 @@
   "scripts": {
     "start": "coffee main.coffee"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanross/synthnode.git"
+  },
+  "homepage": "https://github.com/ivanross/synthnode.git",
   "author": "ivanross",
   "license": "MIT",
   "coffeelintConfig": {
