@@ -47,23 +47,23 @@ Returns the amplitude from the relative time.
 
 Simple example in JavaScript:
 ```js
-  const { Osc } = require('synthnode')
+const { Osc } = require('synthnode')
 
-  var osc = new Osc({
-    amp: 1,
-    freq: 440,
-    phase: 0,
-    type: 'sine'
-  })
+var osc = new Osc({
+  amp: 1,
+  freq: 440,
+  phase: 0,
+  type: 'sine'
+})
 ```
 
 Simple example in CoffeeScript:
 ```coffee
-  { Osc } = require 'synthnode'
+{ Osc } = require 'synthnode'
 
-  osc = new Osc
-    amp: 1
-    freq: 440
-    phase: 0
-    type: 'sine'
+osc = new Osc
+  amp: 1
+  freq: 440
+  phase: 0
+  type: 'sine'
 ```
