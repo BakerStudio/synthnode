@@ -5,13 +5,13 @@
 Represent an oscillator, with his amplitude, frequency and phase
 
 ## Table of contents:
-- Constructor `Osc(opts)`
+- [Constructor `Osc(opts)`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#constructor-oscopts)
 - Methods
   - `Osc.prototype.getAmp()`
   - `Osc.prototype.getFreq()`
   - `Osc.prototype.getPhase()`
   - `Osc.prototype.getType()`
-  - `Osc.prototype.tf(time)`
+  - [`Osc.prototype.tf(time)`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypetftime)
 - Examples
 
 
