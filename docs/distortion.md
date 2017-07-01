@@ -4,6 +4,12 @@
 
 Represent the distortion of a signal.
 
+## Table of contents:
+- [Constructor `Distortion(opts)`](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#constructor-distortionopts)
+- [Methods](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#methods)
+  - [`Distortion.prototype.tf(time)`](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#distortionprototypetftime)
+- [Examples](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#examples)
+
 ## Constructor `Distortion(opts)`
 
 - `opts` Set of configurable options to set on the distortion. Available fields:
@@ -34,7 +40,7 @@ var osc = new Osc({
 
 var dist = new Distortion({
   signal: osc,
-  level: 0.5,
+  level: 0.8,
   type: 'foldback'
 })
 ```
@@ -49,6 +55,6 @@ osc = new Osc
 
 dist = new Distortion
   signal: osc
-  level: 0.5
+  level: 0.8
   type: 'foldback'
 ```
