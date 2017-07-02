@@ -2,7 +2,7 @@
 
 ## Oscillator
 - Add different waveforms:
-	- ~~Square~~
+	- Square
 		- ~~2 step (classic Square Waveform)~~
 		- 4 step
 		- 8 step
@@ -30,8 +30,7 @@
 
 ## API
 - ~~Oscillator~~
-	- add methods
-- Distortion
+- ~~Distortion~~
 - Envelope
-- FileCreator
-- Player
+- ~~FileCreator~~
+- ~~Player~~
