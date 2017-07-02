@@ -4,7 +4,7 @@
 
 Represent the distortion of a signal.
 
-## Table of contents:
+## Table of contents
 - [Constructor `Distortion(opts)`](#constructor-distortionopts)
 - [Methods](#methods)
   - [`Distortion.prototype.tf(time)`](#distortionprototypetftime)
