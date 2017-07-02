@@ -1,7 +1,11 @@
 # FileCreator
 
 With this class you can save the audio from a _TimeFunctionClass_ in a file.
-
+## Table of contents
+- [Methods](#methods)
+  - [`FileCreator.saveRaw(opts)`](#filecreatorsaverawopts)
+  - [`FileCreator.saveWav(opts)`](#filecreatorsavewavopts)
+- [Examples](#examples)
 ## Methods
 ### `FileCreator.saveRaw(opts)`
 This method saves the audio in a `.raw` file.
