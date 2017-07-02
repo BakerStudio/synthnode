@@ -5,14 +5,14 @@
 Represent an oscillator, with his amplitude, frequency and phase
 
 ## Table of contents:
-- [Constructor `Osc(opts)`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#constructor-oscopts)
-- [Methods](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#methods)
-  - [`Osc.prototype.getAmp()`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypegetamp)
-  - [`Osc.prototype.getFreq()`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypegetfreq)
-  - [`Osc.prototype.getPhase()`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypegetphase)
-  - [`Osc.prototype.getType()`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypegetypr)
-  - [`Osc.prototype.tf(time)`](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#oscprototypetftime)
-- [Examples](https://github.com/ivanross/synthnode/blob/docs/docs/oscillator.md#examples)
+- [Constructor `Osc(opts)`](#constructor-oscopts)
+- [Methods](#methods)
+  - [`Osc.prototype.getAmp()`](#oscprototypegetamp)
+  - [`Osc.prototype.getFreq()`](#oscprototypegetfreq)
+  - [`Osc.prototype.getPhase()`](#oscprototypegetphase)
+  - [`Osc.prototype.getType()`](#oscprototypegettype)
+  - [`Osc.prototype.tf(time)`](#oscprototypetftime)
+- [Examples](#examples)
 
 
 ## Constructor `Osc(opts)`
