@@ -3,10 +3,10 @@
 ## TimeFunctionClass
 _TimeFunctionClass_ are all classes with `.prototype.tf(time)` method.
 
-- [Oscillator](/api/oscillator.md)
-- [Distortion]
+- [Oscillator](/docs/api/oscillator.md)
+- [Distortion](/docs/api/distortion.md)
 
 ## Other Classes
 
-- FileCreator
-- Player
+- [FileCreator](/docs/api/file-creator.md)
+- [Player](/docs/api/player.md)
