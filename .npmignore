@@ -1,7 +1,6 @@
-test/
-src/
-example/
 docs/
+example/
+js/
+src/
 
-main.coffee
 TODO.md

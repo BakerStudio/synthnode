@@ -1,0 +1,1 @@
+var Generator,Osc,Speaker,play;Generator=require('audio-generator');Speaker=require('audio-speaker');Osc=require('./oscillator');play=function(r){var e;e=function(e){return[r.tf(e)]};return Generator(e,{duration:1/0}).pipe(Speaker())};exports.play=play
