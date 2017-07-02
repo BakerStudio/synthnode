@@ -30,4 +30,4 @@ FileCreator.saveWav({signal: osc, fileName: 'signal.wav'})
 Player.play(osc)
 ```
 
-See [documentation]().
+See [documentation](/docs/README.md).
