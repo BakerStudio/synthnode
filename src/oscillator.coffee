@@ -32,7 +32,7 @@ class Osc
   getAmp:   -> @amp
   getFreq:  -> @freq
   getPhase: -> @phase
-  # getType:  -> @type
+  getType:  -> @type
   tf: (t) ->
     # turn @amp in time function
     a = @amp

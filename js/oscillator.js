@@ -49,6 +49,10 @@ Osc = (function() {
     return this.phase;
   };
 
+  Osc.prototype.getType = function() {
+    return this.type;
+  };
+
   Osc.prototype.tf = function(t) {
     var a, f_amp, f_phase, ph;
     a = this.amp;
