@@ -1,6 +1,6 @@
 # Synthnode
 
-> A simple library for audio synthesis.
+> A simple library for audio synthesis. 
 
 To use:
 ```bash
@@ -9,12 +9,10 @@ $ npm i --save synthnode
 
 A simple example: 
 ```javascript
-const synth = require('synthnode')
-const Osc = synth.Osc
-const Distortion = synth.Distortion
+const { Osc, Distortion, Player } = require('synthnode')
 
 var osc = new Distortion({
-  level: 0.5,
+  level: 0.9,
   signal: new Osc({
     freq: 440,
     type: 'square',
@@ -25,5 +23,11 @@ var osc = new Distortion({
   })
 })
 
-synth.Player.play(osc)
+// Saving
+FileCreator.saveWav({signal: osc, fileName: 'signal.wav'})
+
+// Playing
+Player.play(osc)
 ```
+
+See [documentation]().
