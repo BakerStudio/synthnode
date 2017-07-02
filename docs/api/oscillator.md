@@ -1,6 +1,6 @@
 # Oscillator
 
-> _TimeFunctionClass_
+> [_TimeFunctionClass_](../README.md)
 
 Represent an oscillator, with his amplitude, frequency and phase
 
@@ -19,8 +19,8 @@ Represent an oscillator, with his amplitude, frequency and phase
 
 - `opts` Set of configurable options to set on the oscillator. Available fields:
   - `freq` [_Integer_] This field is **required**.
-  - `amp`: [_Integer_ | _TimeFunctionClass_] Default = `1`.
-  - `phase`: [_Integer_ | _TimeFunctionClass_] Default = `0`.
+  - `amp`: [_Integer_ | [_TimeFunctionClass_](../README.md) ] Default = `1`.
+  - `phase`: [_Integer_ | [_TimeFunctionClass_](../README.md) ] Default = `0`.
   - `type`: [String] Default = `"sine"`. Available values:
     - `"sine"`
     - `"square"`
