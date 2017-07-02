@@ -1,6 +1,6 @@
 # Player
 
-With this class you can play audio from a _TimeFunctionClass_.
+With this class you can play audio from a [_TimeFunctionClass_](../README.md).
 
 ## Table of contents
 - [Methods](#methods)
@@ -10,8 +10,8 @@ With this class you can play audio from a _TimeFunctionClass_.
 ## Methods
 ### `Player.play(signal)`
 
-This method lets you play a signal (_TimeFunctionClass_) for an infinite time.
-- `signal` [_TimeFunctionClass_] The signal to be played
+This method lets you play a signal ([_TimeFunctionClass_](../README.md)) for an infinite time.
+- `signal` [[_TimeFunctionClass_](../README.md)] The signal to be played
 
 ### Examples
 Simple example in JavaScript:
