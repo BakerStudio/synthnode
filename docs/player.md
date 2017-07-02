@@ -3,9 +3,9 @@
 With this class you can play audio from a _TimeFunctionClass_.
 
 ## Table of contents
-- Methods
-  - `Player.play(signal)`
-- Examples
+- [Methods](#methods)
+  - [`Player.play(signal)`](#playerplaysignal)
+- [Examples](#examples)
 
 ## Methods
 ### `Player.play(signal)`
