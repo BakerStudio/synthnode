@@ -1,6 +1,6 @@
 # FileCreator
 
-With this class you can save the audio from a _TimeFunctionClass_ in a file.
+With this class you can save the audio from a [_TimeFunctionClass_](../README.md) in a file.
 ## Table of contents
 - [Methods](#methods)
   - [`FileCreator.saveRaw(opts)`](#filecreatorsaverawopts)
@@ -10,7 +10,7 @@ With this class you can save the audio from a _TimeFunctionClass_ in a file.
 ### `FileCreator.saveRaw(opts)`
 This method saves the audio in a `.raw` file.
 - `opts` Set of options to save audio. Available fields:
-  - `signal` [_TimeFunctionClass_] The signal to be saved. This field is **required**.
+  - `signal` [[_TimeFunctionClass_](../README.md)] The signal to be saved. This field is **required**.
   - `fileName` [_String_] The name of the produced file. Must be valid path. This field is **required**.
   - `duration` [_Number_] The duration in sec. Default = `1`
   - `sampleRate` [_Integer_] The sample rate. Default = `44100`
@@ -26,7 +26,7 @@ This method saves the audio in a `.raw` file.
 ### `FileCreator.saveWav(opts)`
 This method saves the audio in a `.wav` file.
 - `opts` Set of options to save audio. Available fields:
-  - `signal` [_TimeFunctionClass_] The signal to be saved. This field is **required**.
+  - `signal` [[_TimeFunctionClass_](../README.md)] The signal to be saved. This field is **required**.
   - `fileName` [_String_] The name of the produced file. Must be valid path. This field is **required**.
   - `duration` [_Number_] The duration in sec. Default = `1`
   - `sampleRate` [_Integer_] The sample rate. Default = `44100`

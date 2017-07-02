@@ -1,6 +1,6 @@
 # Distortion
 
-> _TimeFunctionClass_
+> [_TimeFunctionClass_](../README.md)
 
 Represent the distortion of a signal.
 
@@ -13,7 +13,7 @@ Represent the distortion of a signal.
 ## Constructor `Distortion(opts)`
 
 - `opts` Set of configurable options to set on the distortion. Available fields:
-  - `signal` [_TimeFunctionClass_] The signal to be distorted. This field is **required**.
+  - `signal` [[_TimeFunctionClass_](../README.md)] The signal to be distorted. This field is **required**.
   - `level` [_Integer_] The amplitude level from witch the signal is distorted. Default = `0.5`
   - `type` [_String_] The type of distortion. Default = `"clip"`. Available values:
     - `"clip"`
