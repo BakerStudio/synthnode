@@ -20,8 +20,8 @@ This method saves the audio in a `.raw` file.
     - `24`
     - `32`
   - `endian` [_String_] Endianness. Default = `"LITTLE"`. Available values:
-    - `LITTLE`
-    - `BIG`
+    - `"LITTLE"`
+    - `"BIG"`
 
 ### `FileCreator.saveWav(opts)`
 This method saves the audio in a `.wav` file.
