@@ -5,10 +5,10 @@
 Represent the distortion of a signal.
 
 ## Table of contents:
-- [Constructor `Distortion(opts)`](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#constructor-distortionopts)
-- [Methods](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#methods)
-  - [`Distortion.prototype.tf(time)`](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#distortionprototypetftime)
-- [Examples](https://github.com/ivanross/synthnode/blob/docs/docs/distortion.md#examples)
+- [Constructor `Distortion(opts)`](#constructor-distortionopts)
+- [Methods](#methods)
+  - [`Distortion.prototype.tf(time)`](#distortionprototypetftime)
+- [Examples](#examples)
 
 ## Constructor `Distortion(opts)`
 
