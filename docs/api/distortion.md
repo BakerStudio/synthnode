@@ -2,7 +2,7 @@
 
 > [_TimeFunctionClass_](../README.md)
 
-Represent the distortion of a signal.
+Represents the distortion of a signal ([_TimeFunctionClass_](../README.md)).
 
 ## Table of contents
 - [Constructor `Distortion(opts)`](#constructor-distortionopts)
