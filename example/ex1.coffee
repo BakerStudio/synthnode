@@ -2,7 +2,7 @@
   Osc
   Distortion,
   Player
-} = require '../synth.js'
+} = require '../synthnode.js'
 
 cool = new Osc
   freq: 80
