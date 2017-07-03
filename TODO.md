@@ -14,7 +14,7 @@
 		- White
 		- Pink 	
 ## Gain
-- Simple gain
+- ~~Simple gain~~
 
 ## Oscillator Sum
 - Sum `[...]` oscillators
