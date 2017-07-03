@@ -1,4 +1,3 @@
-Osc = require './oscillator'
 fs = require 'fs'
 
 saveRaw = (opts) ->
