@@ -1,6 +1,7 @@
 types = [
   'sine'
   'square'
+  'triangle'
   'sawtooth'
 ]
 
@@ -48,6 +49,8 @@ class Osc
         wave_sine t,f_amp,@freq,f_phase
       when 'square'
         wave_square t,f_amp,@freq,f_phase
+      when 'triangle'
+        wave_triangle t,f_amp,@freq,f_phase
       when 'sawtooth'
         wave_sawtooth t,f_amp,@freq,f_phase
       else
@@ -63,6 +66,12 @@ wave_square = (t,f_amp,freq,f_phase) ->
     f_amp(t)
   else
     - f_amp(t)
+
+wave_triangle = (t,f_amp,freq,f_phase) ->
+
+  time = Math.asin(Math.sin(2*Math.PI*freq*t + f_phase(t)))
+  time /= Math.PI / 2
+  time * f_amp(t)
 
 wave_sawtooth = (t,f_amp,freq,f_phase) ->
   n = 48000 * t
