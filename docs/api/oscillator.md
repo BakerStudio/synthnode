@@ -2,9 +2,9 @@
 
 > [_TimeFunctionClass_](../README.md)
 
-Represent an oscillator, with his amplitude, frequency and phase
+Represents an oscillator, with his amplitude, frequency and phase.
 
-## Table of contents:
+## Table of contents
 - [Constructor `Osc(opts)`](#constructor-oscopts)
 - [Methods](#methods)
   - [`Osc.prototype.getAmp()`](#oscprototypegetamp)
