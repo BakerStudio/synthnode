@@ -1,8 +1,8 @@
-const Osc = require('./min/oscillator.js')
-const Distortion = require('./min/distortion.js')
-const Env = require('./min/envelope.js')
-const FileCreator = require('./min/file-creator.js')
-const Player = require('./min/player.js')
+const Osc = require('./min/oscillator.min.js')
+const Distortion = require('./min/distortion.min.js')
+const Env = require('./min/envelope.min.js')
+const FileCreator = require('./min/file-creator.min.js')
+const Player = require('./min/player.min.js')
 
 exports.Osc = Osc
 exports.Distortion = Distortion
