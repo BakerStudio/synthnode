@@ -5,12 +5,12 @@
 Represents an amplifier.
 
 ## Table of contents
-- Constructor `Gain(opts)`
-- Methods
-  - `Gain::getLevel()`
-  - `Gain::getSignal()`
-  - `Gain::tf(time)`
-- Examples
+- [Constructor `Gain(opts)`](#constructor-gainopts)
+- [Methods](#methods)
+  - [`Gain::getLevel()`](#gaingetlevel)
+  - [`Gain::getSignal()`](#gaingetsignal)
+  - [`Gain::tf(time)`](#gaintftime)
+- [Examples](#examples)
 
 ## Constructor `Gain(opts)`
 
