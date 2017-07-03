@@ -7,11 +7,11 @@ Represents an oscillator, with his amplitude, frequency and phase.
 ## Table of contents
 - [Constructor `Osc(opts)`](#constructor-oscopts)
 - [Methods](#methods)
-  - [`Osc.prototype.getAmp()`](#oscprototypegetamp)
-  - [`Osc.prototype.getFreq()`](#oscprototypegetfreq)
-  - [`Osc.prototype.getPhase()`](#oscprototypegetphase)
-  - [`Osc.prototype.getType()`](#oscprototypegettype)
-  - [`Osc.prototype.tf(time)`](#oscprototypetftime)
+  - [`Osc::getAmp()`](#oscgetamp)
+  - [`Osc::getFreq()`](#oscgetfreq)
+  - [`Osc::getPhase()`](#oscgetphase)
+  - [`Osc::getType()`](#oscgettype)
+  - [`Osc::tf(time)`](#osctftime)
 - [Examples](#examples)
 
 
@@ -27,19 +27,19 @@ Represents an oscillator, with his amplitude, frequency and phase.
     - `"triangle"`
 
 ## Methods
-### `Osc.prototype.getAmp()`
+### `Osc::getAmp()`
 Returns the `amp` of current `Osc`.
 
-### `Osc.prototype.getFreq()`
+### `Osc::getFreq()`
 Returns the `freq` of current `Osc`.
 
-### `Osc.prototype.getPhase()`
+### `Osc::getPhase()`
 Returns the `phase` of current `Osc`.
 
-### `Osc.prototype.getType()`
+### `Osc::getType()`
 Returns the `type` of current `Osc`.
 
-### `Osc.prototype.tf(time)`
+### `Osc::tf(time)`
 Returns the amplitude from the relative time.
 - `time` Time in sec.
 
