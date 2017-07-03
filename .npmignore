@@ -1,7 +1,8 @@
 docs/
 example/
 js/
-src/
 private/
+src/
 
+Icon*
 TODO.md
