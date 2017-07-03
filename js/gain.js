@@ -2,17 +2,15 @@
 var Gain;
 
 Gain = (function() {
-  function Gain() {}
-
-  Gain.prototype.construnctor = function(opts) {
+  function Gain(opts) {
     if (!(opts && opts.signal)) {
       throw new Error('Missing Signal');
     }
     if (!opts.signal.tf()) {
       throw new Error('Signal must be a TFC');
     }
-    return this.signal = opts.signal;
-  };
+    this.signal = opts.signal;
+  }
 
   return Gain;
 
