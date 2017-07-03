@@ -9,3 +9,5 @@ exports.Distortion = Distortion
 exports.Env = Env
 exports.FileCreator = FileCreator
 exports.Player = Player
+
+exports.Gain = require('./min/gain.min.js')
