@@ -5,6 +5,7 @@ _TimeFunctionClass_ are all classes with `.prototype.tf(time)` method.
 
 - [Oscillator](/docs/api/oscillator.md)
 - [Distortion](/docs/api/distortion.md)
+- [Gain](/docs/api/gain.md)
 
 ## Other Classes
 
