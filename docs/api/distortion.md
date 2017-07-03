@@ -7,7 +7,7 @@ Represents the distortion of a signal ([_TimeFunctionClass_](../README.md)).
 ## Table of contents
 - [Constructor `Distortion(opts)`](#constructor-distortionopts)
 - [Methods](#methods)
-  - [`Distortion.prototype.tf(time)`](#distortionprototypetftime)
+  - [`Distortion::tf(time)`](#distortiontftime)
 - [Examples](#examples)
 
 ## Constructor `Distortion(opts)`
@@ -23,7 +23,7 @@ Represents the distortion of a signal ([_TimeFunctionClass_](../README.md)).
     - `"zero"`
 
 ## Methods
-### `Distortion.prototype.tf(time)`
+### `Distortion::tf(time)`
 Returns the amplitude form the relative time.
 - `time` Time in sec.
 
