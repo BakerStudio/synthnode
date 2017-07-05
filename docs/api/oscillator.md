@@ -32,6 +32,11 @@ Represents an oscillator, with his amplitude, frequency and phase.
 ### `Osc.types()`
 Returns a string array with all available values for `opts.type` field in constructor.
 
+```javascript
+console.log(Osc.types())
+// [ 'sine', 'square', 'triangle', 'sawtooth' ]
+```
+
 ### `Osc::getAmp()`
 Returns the `amp` of current `Osc`.
 
