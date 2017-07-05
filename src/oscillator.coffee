@@ -30,6 +30,7 @@ class Osc
     unless opts.type in types
       throw new Error 'Type must be string supported'
     @type = opts.type
+  @types = () -> types
   getAmp:   -> @amp
   getFreq:  -> @freq
   getPhase: -> @phase
