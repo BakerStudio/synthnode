@@ -11,7 +11,7 @@ $ npm i --save synthnode
 
 A simple example: 
 ```javascript
-const { Osc, Distortion, Player } = require('synthnode')
+const { Osc, Distortion, Player, FileCreator } = require('synthnode')
 
 var osc = new Distortion({
   level: 0.9,
