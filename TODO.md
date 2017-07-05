@@ -7,18 +7,21 @@
 		- 4 step
 		- 8 step
 	- ~~Sawtooth~~
-		- fix `@phase`
-		- fix sampling
-	- Triangle
-	- Noise
-		- White
-		- Pink 	
+		- ~~fix `@phase`~~
+		- ~~fix sampling~~
+	- ~~Triangle~~
+
+## Noise
+- White
+- Pink 	
+
 ## Gain
 - ~~Simple gain~~
 
 ## Oscillator Sum
 - Sum `[...]` oscillators
 - Create `n` harmonics from an `Osc`
+
 ## FileCreator
 - In `saveWav()` find better way to join `header` with `bytes`
 
