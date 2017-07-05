@@ -1,6 +1,8 @@
-# Synthnode
+# Synthnode 
 
 > A simple library for audio synthesis. 
+
+[![NPM](https://nodei.co/npm/synthnode.png?downloadRank=true)](https://nodei.co/npm/synthnode/)
 
 To use:
 ```bash
