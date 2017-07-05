@@ -73,15 +73,8 @@ wave_triangle = (t,f_amp,freq,f_phase) ->
   time /= Math.PI / 2
   time * f_amp(t)
 
+
 wave_sawtooth = (t,f_amp,freq,f_phase) ->
-  n = 48000 * t
-  spc = 48000 / freq # Samples per Cycle
-  #console.log n
-  #console.log spc / 2
-  #console.log Math.floor(n) % Math.floor(spc)
-  if (Math.floor(n)+f_phase(t)) % Math.floor(spc) <= (spc / 2)
-    (2 * f_amp(t) * (Math.floor(n)+f_phase(t)) % Math.floor(spc) / spc )
-  else
-    (2 * f_amp(t) * ((Math.floor(n)+f_phase(t)) % Math.floor(spc) / spc - 1))
+  - (2 * f_amp(t) / Math.PI) * Math.atan( 1 / Math.tan(t * Math.PI * freq + Math.PI / 2 + f_phase(t) / 2))
 
 module.exports = Osc
