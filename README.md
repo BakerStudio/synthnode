@@ -1,4 +1,4 @@
-# Synthnode 
+# Synthnode [![Build Status](https://travis-ci.org/ivanross/synthnode.svg?branch=master)](https://travis-ci.org/ivanross/synthnode)
 
 > A simple library for audio synthesis. 
 
