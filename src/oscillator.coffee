@@ -31,6 +31,17 @@ class Osc
       throw new Error 'Type must be string supported'
     @type = opts.type
   @types = () -> types
+  clone: () ->
+    a = if @amp.clone? then @amp.clone() else @amp
+    f = if @freq.clone? then @freq.clone() else @freq
+    t = if @type.clone? then @type.clone() else @type
+    p = if @phase.clone? then @phase.clone() else @phase
+    o = new Osc
+      freq: f
+      amp: a
+      phase: p
+      type: t
+    o
   getAmp:   -> @amp
   getFreq:  -> @freq
   getPhase: -> @phase

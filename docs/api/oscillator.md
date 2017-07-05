@@ -8,6 +8,7 @@ Represents an oscillator, with his amplitude, frequency and phase.
 - [Constructor `Osc(opts)`](#constructor-oscopts)
 - [Methods](#methods)
   - [`Osc.types()`](#osctypes)
+  - [`Osc::clone()`](#oscclone)
   - [`Osc::getAmp()`](#oscgetamp)
   - [`Osc::getFreq()`](#oscgetfreq)
   - [`Osc::getPhase()`](#oscgetphase)
@@ -36,6 +37,9 @@ Returns a string array with all available values for `opts.type` field in constr
 console.log(Osc.types())
 // [ 'sine', 'square', 'triangle', 'sawtooth' ]
 ```
+
+### `Osc::clone()`
+Returns a clone of current `Osc`.
 
 ### `Osc::getAmp()`
 Returns the `amp` of current `Osc`.

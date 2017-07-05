@@ -41,6 +41,21 @@ Osc = (function() {
     return types;
   };
 
+  Osc.prototype.clone = function() {
+    var a, f, o, p, t;
+    a = this.amp.clone != null ? this.amp.clone() : this.amp;
+    f = this.freq.clone != null ? this.freq.clone() : this.freq;
+    t = this.type.clone != null ? this.type.clone() : this.type;
+    p = this.phase.clone != null ? this.phase.clone() : this.phase;
+    o = new Osc({
+      freq: f,
+      amp: a,
+      phase: p,
+      type: t
+    });
+    return o;
+  };
+
   Osc.prototype.getAmp = function() {
     return this.amp;
   };
