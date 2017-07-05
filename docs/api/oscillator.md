@@ -25,6 +25,7 @@ Represents an oscillator, with his amplitude, frequency and phase.
     - `"sine"`
     - `"square"`
     - `"triangle"`
+    - `"sawtooth"`
 
 ## Methods
 ### `Osc::getAmp()`
