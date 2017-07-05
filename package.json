@@ -1,6 +1,6 @@
 {
   "name": "synthnode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple library for audio synthesis",
   "main": "synthnode.js",
   "dependencies": {
@@ -13,9 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivanross/synthnode.git"
+    "url": "https://github.com/ivanross/synthnode"
   },
-  "homepage": "https://github.com/ivanross/synthnode.git",
+  "bugs" : {
+    "url" : "https://github.com/ivanross/synthnode/issues"
+  },
+  "homepage": "https://github.com/ivanross/synthnode",
   "author": "ivanross",
   "license": "MIT",
   "coffeelintConfig": {
