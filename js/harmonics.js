@@ -3,10 +3,16 @@ var Harm;
 
 Harm = (function() {
   function Harm(opts) {
-    if (!(opts && opts.osc && opts.osc.freq && (opts.osc.tf != null))) {
+    if (!opts) {
+      throw new Error('Missing Options');
+    }
+    if (!opts.osc) {
       throw new Error('Missing Oscillator');
     }
-    this.osc = osc;
+    if (!((opts.osc.freq != null) && (opts.osc.tf != null))) {
+      throw new Error('osc must be an Osc');
+    }
+    this.osc = opts.osc;
   }
 
   return Harm;

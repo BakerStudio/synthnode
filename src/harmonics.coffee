@@ -1,7 +1,11 @@
 class Harm
   constructor: (opts) ->
-    unless opts and opts.osc and opts.osc.freq and opts.osc.tf?
+    unless opts
+      throw new Error 'Missing Options'
+    unless opts.osc
       throw new Error 'Missing Oscillator'
-    @osc = osc
+    unless opts.osc.freq? and opts.osc.tf?
+      throw new Error 'osc must be an Osc'
+    @osc = opts.osc
 
 module.exports = Harm
