@@ -12,3 +12,5 @@ Harm = (function() {
   return Harm;
 
 })();
+
+module.exports = Harm;
