@@ -7,6 +7,7 @@ Represents an oscillator, with his amplitude, frequency and phase.
 ## Table of contents
 - [Constructor `Osc(opts)`](#constructor-oscopts)
 - [Methods](#methods)
+  - [`Osc.types()`](#osctypes)
   - [`Osc::getAmp()`](#oscgetamp)
   - [`Osc::getFreq()`](#oscgetfreq)
   - [`Osc::getPhase()`](#oscgetphase)
@@ -28,6 +29,9 @@ Represents an oscillator, with his amplitude, frequency and phase.
     - `"sawtooth"`
 
 ## Methods
+### `Osc.types()`
+Returns a string array with all available values for `opts.type` field in constructor.
+
 ### `Osc::getAmp()`
 Returns the `amp` of current `Osc`.
 

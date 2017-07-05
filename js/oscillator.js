@@ -37,6 +37,10 @@ Osc = (function() {
     this.type = opts.type;
   }
 
+  Osc.types = function() {
+    return types;
+  };
+
   Osc.prototype.getAmp = function() {
     return this.amp;
   };
