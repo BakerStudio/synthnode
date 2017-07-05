@@ -54,12 +54,10 @@ class Osc
       when 'sawtooth'
         wave_sawtooth t,f_amp,@freq,f_phase
       else
-        0
+        throw new Error 'Waveform Type Selection Error'
 
 wave_sine = (t,f_amp,freq,f_phase) ->
   Math.sin(2*Math.PI*t*freq + f_phase(t)) * f_amp(t)
-
-
 
 wave_square = (t,f_amp,freq,f_phase) ->
   if Math.sin(2*Math.PI*t*freq+f_phase(t)) > 0
@@ -68,11 +66,9 @@ wave_square = (t,f_amp,freq,f_phase) ->
     - f_amp(t)
 
 wave_triangle = (t,f_amp,freq,f_phase) ->
-
   time = Math.asin(Math.sin(2*Math.PI*freq*t + f_phase(t)))
   time /= Math.PI / 2
   time * f_amp(t)
-
 
 wave_sawtooth = (t,f_amp,freq,f_phase) ->
   - (2 * f_amp(t) / Math.PI) * Math.atan( 1 / Math.tan(t * Math.PI * freq + Math.PI / 2 + f_phase(t) / 2))

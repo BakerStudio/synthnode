@@ -75,7 +75,7 @@ Osc = (function() {
       case 'sawtooth':
         return wave_sawtooth(t, f_amp, this.freq, f_phase);
       default:
-        return 0;
+        throw new Error('Waveform Type Selection Error');
     }
   };
 
