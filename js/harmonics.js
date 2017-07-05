@@ -13,7 +13,33 @@ Harm = (function() {
       throw new Error('osc must be an Osc');
     }
     this.osc = opts.osc;
+    if (opts.n == null) {
+      opts.n = 2;
+    }
+    if (typeof opts.n !== 'number') {
+      throw new Error('n must be numeric');
+    }
+    if (!Number.isInteger(opts.n)) {
+      throw new Error('n must be Integer');
+    }
+    if (!(opts.n > 0)) {
+      throw new Error('n must be positive and not zero');
+    }
+    this.n = opts.n;
   }
+
+  Harm.prototype.tf = function(t) {
+    var i, j, n, o, osc, out, ref;
+    osc = this.osc;
+    n = this.n;
+    out = 0;
+    for (i = j = 1, ref = n; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+      o = osc;
+      o.freq *= i;
+      out += o.tf(t);
+    }
+    return out;
+  };
 
   return Harm;
 
