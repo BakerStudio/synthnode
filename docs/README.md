@@ -1,14 +1,14 @@
 # Documentation
 
 ## TimeFunctionClass
-_TimeFunctionClass_ are all classes with `.prototype.tf(time)` method.
+_TimeFunctionClass_ are all classes with `.prototype.tf(time)` method. Those represents a wave form, o any kind of amplitude varioation by time.
 
 - [Oscillator](./api/oscillator.md)
-- [Harmonics](/docs/api/harmonics.md)
-- [Distortion](/docs/api/distortion.md)
-- [Gain](/docs/api/gain.md)
+- [Harmonics](./api/harmonics.md)
+- [Distortion](./api/distortion.md)
+- [Gain](./api/gain.md)
 
 ## Other Classes
 
-- [FileCreator](/docs/api/file-creator.md)
-- [Player](/docs/api/player.md)
+- [FileCreator](./api/file-creator.md)
+- [Player](./api/player.md)
