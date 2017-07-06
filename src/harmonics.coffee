@@ -22,7 +22,7 @@ class Harm
 
     out = 0
     for i in [1..n]
-      o = osc
+      o = osc.clone()
       o.freq *= i
       out += o.tf t
     out

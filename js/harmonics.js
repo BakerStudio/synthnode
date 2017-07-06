@@ -34,7 +34,7 @@ Harm = (function() {
     n = this.n;
     out = 0;
     for (i = j = 1, ref = n; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
-      o = osc;
+      o = osc.clone();
       o.freq *= i;
       out += o.tf(t);
     }
