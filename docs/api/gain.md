@@ -7,6 +7,7 @@ Represents an amplifier.
 ## Table of contents
 - [Constructor `Gain(opts)`](#constructor-gainopts)
 - [Methods](#methods)
+  - [`Gain::clone()`](#gainclone)
   - [`Gain::getLevel()`](#gaingetlevel)
   - [`Gain::getSignal()`](#gaingetsignal)
   - [`Gain::tf(time)`](#gaintftime)
@@ -19,6 +20,9 @@ Represents an amplifier.
   - `level` : [_Integer_] The value multiplied to the signal. Default = `1`
 
 ## Methods
+### `Gain::clone()`
+Returns a clone of current `Gain`.
+
 ### `Gain::getLevel()`
 Returns the `level` of current `Gain`.
 

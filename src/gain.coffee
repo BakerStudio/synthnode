@@ -11,6 +11,13 @@ class Gain
     unless typeof opts.level is 'number'
       throw new Error 'Level must be numeric'
     @level = opts.level
+  clone: ->
+    s = if @signal.clone? then @signal.clone() else @signal
+    l = if @level.clone? then @level.clone() else @level
+    g = new Gain
+      signal: s
+      level: l
+    g
   getSignal: () -> @signal
   getLevel: () -> @level
   tf: (t) ->
