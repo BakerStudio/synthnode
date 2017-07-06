@@ -50,6 +50,21 @@ Env = (function() {
     this.r = opts.r;
   }
 
+  Env.prototype.clone = function() {
+    var a, d, e, r, s;
+    a = this.a.clone != null ? this.a.clone() : this.a;
+    d = this.d.clone != null ? this.d.clone() : this.d;
+    s = this.s.clone != null ? this.s.clone() : this.s;
+    r = this.r.clone != null ? this.r.clone() : this.r;
+    e = new Env({
+      a: a,
+      r: r,
+      s: s,
+      d: d
+    });
+    return e;
+  };
+
   Env.prototype.tf = function(t) {
     if ((0 <= t && t < this.a)) {
       return t / this.a;

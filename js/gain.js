@@ -19,6 +19,17 @@ Gain = (function() {
     this.level = opts.level;
   }
 
+  Gain.prototype.clone = function() {
+    var g, l, s;
+    s = this.signal.clone != null ? this.signal.clone() : this.signal;
+    l = this.level.clone != null ? this.level.clone() : this.level;
+    g = new Gain({
+      signal: s,
+      level: l
+    });
+    return g;
+  };
+
   Gain.prototype.getSignal = function() {
     return this.signal;
   };

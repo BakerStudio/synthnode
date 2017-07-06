@@ -33,6 +33,19 @@ Distortion = (function() {
     this.type = opts.type;
   }
 
+  Distortion.prototype.clone = function() {
+    var d, l, s, t;
+    s = this.signal.clone != null ? this.signal.clone() : this.signal;
+    l = this.level.clone != null ? this.level.clone() : this.level;
+    t = this.type.clone != null ? this.type.clone() : this.type;
+    d = new Distortion({
+      signal: s,
+      level: l,
+      type: t
+    });
+    return d;
+  };
+
   Distortion.prototype.tf = function(t) {
     var o, osc, ref, ref1, ref2, ref3, ref4, type;
     osc = this.signal;

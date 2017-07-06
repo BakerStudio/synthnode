@@ -33,6 +33,17 @@ class Env
     unless typeof opts.r is 'number'
       throw new Error 'Release must be numeric'
     @r = opts.r
+  clone: ->
+    a = if @a.clone? then @a.clone() else @a
+    d = if @d.clone? then @d.clone() else @d
+    s = if @s.clone? then @s.clone() else @s
+    r = if @r.clone? then @r.clone() else @r
+    e = new Env
+      a: a
+      r: r
+      s: s
+      d: d
+    e
   tf: (t) ->
     if 0 <= t < @a
       t / @a
