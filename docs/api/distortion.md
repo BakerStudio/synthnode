@@ -25,7 +25,7 @@ Represents the distortion of a signal ([_TimeFunctionClass_](../README.md)).
 
 ## Methods
 ### `Distortion::clone()`
-Return a clone of current `Distortion`
+Return a clone of current `Distortion`.
 
 ### `Distortion::tf(time)`
 Returns the amplitude form the relative time.
