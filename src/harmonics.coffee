@@ -16,14 +16,36 @@ class Harm
     unless opts.n > 0
       throw new Error 'n must be positive and not zero'
     @n = opts.n
+
+    opts.amps?= ( ->
+      a = []
+      for i in [1..@n]
+        a.push(1/i)
+      a
+    ).call @
+    unless Object::toString.call(opts.amps) == "[object Array]"
+      throw new Error 'amps must be an array'
+    unless opts.amps.length == @n
+      throw new Error 'size of amps must be opts.n'
+    unless ( ->
+      b = true
+      for a in opts.amps
+        b &= typeof a is 'number'
+      b
+    ).call @
+      throw new Error 'all values in amps must be numeric'
+    @amps = opts.amps
+
   tf: (t) ->
     osc = @osc
     n = @n
+    amps = @amps
 
     out = 0
     for i in [1..n]
       o = osc.clone()
       o.freq *= i
+      o.amp *= amps[i-1]
       out += o.tf t
     out
 module.exports = Harm

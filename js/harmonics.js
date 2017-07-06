@@ -26,16 +26,47 @@ Harm = (function() {
       throw new Error('n must be positive and not zero');
     }
     this.n = opts.n;
+    if (opts.amps == null) {
+      opts.amps = (function() {
+        var a, i, j, ref;
+        a = [];
+        for (i = j = 1, ref = this.n; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+          a.push(1 / i);
+        }
+        return a;
+      }).call(this);
+    }
+    if (Object.prototype.toString.call(opts.amps) !== "[object Array]") {
+      throw new Error('amps must be an array');
+    }
+    if (opts.amps.length !== this.n) {
+      throw new Error('size of amps must be opts.n');
+    }
+    if (!(function() {
+      var a, b, j, len, ref;
+      b = true;
+      ref = opts.amps;
+      for (j = 0, len = ref.length; j < len; j++) {
+        a = ref[j];
+        b &= typeof a === 'number';
+      }
+      return b;
+    }).call(this)) {
+      throw new Error('all values in amps must be numeric');
+    }
+    this.amps = opts.amps;
   }
 
   Harm.prototype.tf = function(t) {
-    var i, j, n, o, osc, out, ref;
+    var amps, i, j, n, o, osc, out, ref;
     osc = this.osc;
     n = this.n;
+    amps = this.amps;
     out = 0;
     for (i = j = 1, ref = n; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
       o = osc.clone();
       o.freq *= i;
+      o.amp *= amps[i - 1];
       out += o.tf(t);
     }
     return out;
