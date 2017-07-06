@@ -20,7 +20,7 @@
 
 ## Oscillator Sum
 - Sum `[...]` oscillators
-- Create `n` harmonics from an `Osc`
+- ~~Create `n` harmonics from an `Osc`~~
 
 ## FileCreator
 - In `saveWav()` find better way to join `header` with `bytes`
