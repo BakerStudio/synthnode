@@ -30,7 +30,15 @@ class Distortion
     unless opts.type in types
       throw new Error "Type unknown or not supported: #{opts.type}"
     @type = opts.type
-
+  clone: ->
+    s = if @signal.clone? then @signal.clone() else @signal
+    l = if @level.clone? then @level.clone() else @level
+    t = if @type.clone? then @type.clone() else @type
+    d = new Distortion
+      signal: s
+      level: l
+      type: t
+    d
   tf: (t) ->
     osc = @signal
     type = @type
