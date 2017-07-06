@@ -57,6 +57,28 @@ Harm = (function() {
     this.amps = opts.amps;
   }
 
+  Harm.prototype.clone = function() {
+    var a, h, n, o;
+    o = this.osc.clone();
+    n = this.n;
+    a = (function() {
+      var j, len, ref, val;
+      a = [];
+      ref = this.amps;
+      for (j = 0, len = ref.length; j < len; j++) {
+        val = ref[j];
+        a.push(val);
+      }
+      return a;
+    }).call(this);
+    h = new Harm({
+      osc: o,
+      n: n,
+      amps: a
+    });
+    return h;
+  };
+
   Harm.prototype.tf = function(t) {
     var amps, i, j, n, o, osc, out, ref;
     osc = this.osc;

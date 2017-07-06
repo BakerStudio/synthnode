@@ -35,7 +35,20 @@ class Harm
     ).call @
       throw new Error 'all values in amps must be numeric'
     @amps = opts.amps
-
+  clone: ->
+    o = @osc.clone()
+    n = @n
+    a = ( ->
+      a = []
+      for val in @amps
+        a.push val
+      a
+    ).call @
+    h = new Harm
+      osc: o
+      n: n
+      amps: a
+    h
   tf: (t) ->
     osc = @osc
     n = @n
